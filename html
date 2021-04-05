@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synesthesia | A Visualizing Tool</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="synesthesia-css.css">
+  </head>
+  <body>
+    <div class="first-half">
+      <div class="title">
+        <text>Synesthesia</text>
+      </div>
+      <div class="subtitle">
+        <text>A Visualizing Tool</text>
+      </div>
+      <div class="arrow1" id="arrow1">
+        <img src="arrow.png" width="3%" height="3%"></img>
+      </div>
+    </div>
+    <div class="second-half">
+      <div class="description">
+        <p>
+          Synesthesia is a neurological phenomenon in which one
+          sense is perceived simultaneously with one or more additional senses.
+          For example, objects like letters, shapes, numbers, or even people's names
+          are perceived at the same time as sensory perceptions such as smell, color,
+          or flavor, resulting in interesting combinations of perceptions!
+        </p>
+        <p>
+          So how might a synesthete who sees each letter as a different color—a
+          form called "grapheme-color synesthesia"—see the world?
+          This tool's purpose is to explore that possibility.
+        </p>
+        <p>
+          Simply type in any text, such as your name, a song lyric, or a quote
+          into the text box below. Click the "VISUALIZE" button to see your text
+          visually represented as colors. Note that each letter corresponds to a
+          different color. How might different types of text, like songs, palindromes,
+          or even genetic code, generate interesting color patterns? Try it out below:
+        </p>
+      </div>
+      <div class="arrow2" id="arrow2">
+        <img src="arrow.png" width="6%" height="6%"></img>
+      </div>
+      <div class="add-text-container">
+        <div class="text-box" id="text-box">
+          <textarea class="text" id="inputText"></textarea>
+        </div>
+        <div class="visualize">
+          <button class="visualize-button" id="visualize-button">Visualize</button>
+        </div>
+      </div>
+      <div class="add-circle-container">
+        <div class="circle-container" id="circle-container">
+        </div>
+        <div class="clear">
+          <button class="clear-button" id="clear-button">Clear</button>
+        </div>
+      </div>
+      <div class="toTop">
+        <button class="top-button" id="top-button">Back to Top</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="./synesthesia-script.js"></script>
+</html>
